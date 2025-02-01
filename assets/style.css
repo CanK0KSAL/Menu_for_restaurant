@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f6f1;
+    color: #333;
+    padding: 20px;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-header h1 {
+    font-size: 2.8rem;
+    color: #a71d1a;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #555;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.menu-section h2:hover {
+    color: #a71d1a;
+}
+
+.menu-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.menu-section table th,
+.menu-section table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    color: #444;
+    font-size: 1rem;
+}
+
+.menu-section table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-section table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.price-placeholder {
+    width: 90px;
+    height: 40px;
+    background-color: #eee;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.menu-section img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .menu-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .menu-section table th,
+    .menu-section table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

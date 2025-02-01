@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Menu</title>
+    <link rel="stylesheet" href="assets/style.css">
+  
+</head>
+<body>
+    <div class="menu-container">
+        <!-- Header -->
+        <div class="menu-header">
+            <h1>Başgan Köfte</h1>
+            <h1>Menü</h1>
+        </div>
+
+        <!-- Ekmek Arası Section -->
+        <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">Ekmek Arası</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Yarım (85 gr)</th>
+                        <th>Tam (110 gr)</th>
+                        <th>Bakkal (170 gr)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kavurma</td>
+                        <td><div class="price-placeholder">150₺</div></td>
+                        <td><div class="price-placeholder">200₺</div></td>
+                        <td><div class="price-placeholder">250₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Köfte</td>
+                        <td><div class="price-placeholder">100₺</div></td>
+                        <td><div class="price-placeholder">140₺</div></td>
+                        <td><div class="price-placeholder">200₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Tavuk</td>
+                        <td><div class="price-placeholder">90₺</div></td>
+                        <td><div class="price-placeholder">110₺</div></td>
+                        <td><div class="price-placeholder">160₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Arnavut Ciğeri</td>
+                        <td><div class="price-placeholder">90₺</div></td>
+                        <td><div class="price-placeholder">110₺</div></td>
+                        <td><div class="price-placeholder">160₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Sucuk</td>
+                        <td><div class="price-placeholder">90₺</div></td>
+                        <td><div class="price-placeholder">110₺</div></td>
+                        <td><div class="price-placeholder">160₺</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Karışıklar Section -->
+        <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">Ekmek Arası (Karışıklar)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Yarım Ekmek</th>
+                        <th>Üç Çeyrek Ekmek</th>
+                        <th>Tam Ekmek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Köfte-Tavuk</td>
+                        <td><div class="price-placeholder">150₺</div></td>
+                        <td><div class="price-placeholder">200₺</div></td>
+                        <td><div class="price-placeholder">300₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Köfte-Sucuk</td>
+                        <td><div class="price-placeholder">150₺</div></td>
+                        <td><div class="price-placeholder">200₺</div></td>
+                        <td><div class="price-placeholder">300₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Tavuk-Sucuk</td>
+
+                        <td><div class="price-placeholder">130₺</div></td>
+                        <td><div class="price-placeholder">170₺</div></td>
+                        <td><div class="price-placeholder">220₺</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         
+          <!-- Menüler Section -->
+          <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">Menüler</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Fiyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kavurma Pilav Menü <h5 style="font-weight: normal;"> (110gr kavurma, pilav, ayran)</h5></td>
+                        <td><div class="price-placeholder">250₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Kavurma Patates Menü <h5 style="font-weight: normal;"> (110gr kavurma, patates, ayran)</h5></td>
+                        <td><div class="price-placeholder">250₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Kavurma Tam Menü <h5 style="font-weight: normal;">(110gr kavurma, pilav, patates, ayran)</h5></td>
+                        <td><div class="price-placeholder">280₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Köfte Pilav Menü <h5 style="font-weight: normal;"> (110gr köfte, pilav, ayran)</h5></td>
+                        <td><div class="price-placeholder">190₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Köfte Patates Menü <h5 style="font-weight: normal;"> (110gr köfte, patates, ayran)</h5></td>
+                        <td><div class="price-placeholder">190₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Köfte Tam Menü <h5 style="font-weight: normal;">(110gr köfte, pilav, patates, ayran)</h5></td>
+                        <td><div class="price-placeholder">220₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Tavuk Pilav Menü <h5 style="font-weight: normal;">(110gr tavuk, pilav, ayran)</h5></td>
+                        <td><div class="price-placeholder">160₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Tavuk Patates Menü  <h5 style="font-weight: normal;"> (110gr tavuk, patates, ayran)</h5></td>
+                        <td><div class="price-placeholder">160₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Tavuk Tam Menü  <h5 style="font-weight: normal;"> (110gr tavuk, pilav, patates, ayran)</h5></td>
+                        <td><div class="price-placeholder">190₺</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tost Çeşitleri Section -->
+        <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">Tost Çeşitleri</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Yarım Ekmek</th>
+                        <th>Üç Çeyrek Ekmek</th>
+                        <th>Tam Ekmek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sanayi Tostu <h5 style="font-weight: normal;"> (Sucuk, kaşar, yumurta, domates, biber)</h5></td>
+                        <td><div class="price-placeholder">80₺</div></td>
+                        <td><div class="price-placeholder">100₺</div></td>
+                        <td><div class="price-placeholder">130₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Y. Karışık Tost <h5 style="font-weight: normal;"> (Sucuk, kaşar, yumurta)           </h5> </td>
+                        <td><div class="price-placeholder">70₺</div></td>
+                        <td><div class="price-placeholder">90₺</div></td>
+                        <td><div class="price-placeholder">120₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Karışık Tost <h5 style="font-weight: normal;"> (Sucuk, kaşar)           </h5> </td>
+                        <td><div class="price-placeholder">60₺</div></td>
+                        <td><div class="price-placeholder">80₺</div></td>
+                        <td><div class="price-placeholder">110₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Sade Tost <h5 style="font-weight: normal;"> [Sadece seçtiğiniz malzemeden yapılır! (Sucuk-kaşar-yumurta)]           </h5> </td>
+                        <td><div class="price-placeholder">50₺</div></td>
+                        <td><div class="price-placeholder">70₺</div></td>
+                        <td><div class="price-placeholder">100₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Kavurmalı Tost  <h5 style="font-weight: normal;">  (100gr kavurma, kaşar)          </h5></td>
+                        <td><div class="price-placeholder">150₺</div></td>
+                        <td><div class="price-placeholder">200₺</div></td>
+                        <td><div class="price-placeholder">250₺</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tabaklar Section -->
+        <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">Tabaklar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Fiyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Çorba</td>
+                        <td><div class="price-placeholder">60₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Pilav</td>
+                        <td><div class="price-placeholder">60₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Kahvaltı Tabağı</td>
+                        <td><div class="price-placeholder">150₺</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Kahvaltılık Ekmek Arası Section -->
+        <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">Kahvaltılık Ekmek Arası</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Yarım</th>
+                        <th>Üç Çeyrek</th>
+                        <th>Tam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Patso</td>
+                        <td><div class="price-placeholder">70₺</div></td>
+                        <td><div class="price-placeholder">100₺</div></td>
+                        <td><div class="price-placeholder">120₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Gobit (Yumurta başına 10 TL eklenir!)</td>
+                        <td><div class="price-placeholder">50₺</div></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- İçecekler Section -->
+        <div class="menu-section">
+            <h2 onclick="toggleVisibility(this)" style="color: #333333;">İçecekler</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ürün</th>
+                        <th>Resim</th>
+                        <th>Fiyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kutu Kola</td>
+                        <td><img src="assets/pictures/Kutu-Kola.jpg" alt="Kutu Kola"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Fanta</td>
+                        <td><img src="assets/pictures/Fanta.jpg" alt="Fanta"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Sprite</td>
+                        <td><img src="assets/pictures/Sprite.jpeg" alt="Sprite"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Cappy Meyve Suyu</td>
+                        <td><img src="assets/pictures/Cappy Meyve Suyu.webp" alt="Cappy Meyve Suyu"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Şişe Kola</td>
+                        <td><img src="assets/pictures/şişe kola.jpg" alt="Şişe Kola"></td>
+                        <td><div class="price-placeholder">30₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Sarıyer Kola</td>
+                        <td><img src="assets/pictures/sariyer-kola-330-ML.webp" alt="Sarıyer Kola"></td>
+                        <td><div class="price-placeholder">20₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Niğde Gazozu</td>
+                        <td><img src="assets/pictures/Niğde Gazozu.webp" alt="Niğde Gazozu"></td>
+                        <td><div class="price-placeholder">30₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Fuse Tea (Şeftali)</td>
+                        <td><img src="assets/pictures/fusetea şeftali.png" alt="Fuse Tea Şeftali"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Fuse Tea (Mango)</td>
+                        <td><img src="assets/pictures/fusetea mango.jpeg" alt="Fuse Tea Mango"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Fuse Tea (Karpuz)</td>
+                        <td><img src="assets/pictures/fuse tea karpuz.jpeg" alt="Fuse Tea Karpuz"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Fuse Tea (Limon)</td>
+                        <td><img src="assets/pictures/fusetea limon.jpeg" alt="Fuse Tea Limon"></td>
+                        <td><div class="price-placeholder">40₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Yayık Ayran</td>
+                        <td><img src="assets/pictures/Yayık Ayran.webp" alt="Yayık Ayran"></td>
+                        <td><div class="price-placeholder">25₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Tombul Ayran</td>
+                        <td><img src="assets/pictures/Tombul_Ayran_195_ml.png" alt="Tombul Ayran"></td>
+                        <td><div class="price-placeholder">20₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Küçük Ayran</td>
+                        <td><img src="assets/pictures/KüçükAyran_200ml.png" alt="Tombul Ayran"></td>
+                        <td><div class="price-placeholder">15₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Acılı-Acısz Şalgam</td>
+                        <td><img src="assets/pictures/Acılı-Acısz Şalgam.jpeg" alt="Şalgam"></td>
+                        <td><div class="price-placeholder">30₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Meyveli Soda</td>
+                        <td><img src="assets/pictures/Meyveli Soda.png" alt="Meyveli Soda"></td>
+                        <td><div class="price-placeholder">20₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Sade Soda</td>
+                        <td><img src="assets/pictures/sade soda.jpg" alt="Sade Soda"></td>
+                        <td><div class="price-placeholder">15₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Çay</td>
+                        <td><img src="assets/pictures/Çay.jpg" alt="Çay"></td>
+                        <td><div class="price-placeholder">10₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Kahve</td>
+                        <td><img src="assets/pictures/Kahve.jpg" alt="Kahve"></td>
+                        <td><div class="price-placeholder">15₺</div></td>
+                    </tr>
+                    <tr>
+                        <td>Su</td>
+                        <td><img src="assets/pictures/Su.jpeg" alt="Su"></td>
+                        <td><div class="price-placeholder">10₺</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+    </div>
+
+
+
+<script src="assets/main.js"></script>
+</body>
+</html>
