@@ -1,45 +1,57 @@
-QR Menu - README
 
-Overview
+# QR Menu - Başgan Köfte
 
-This project is a digital QR-based restaurant menu designed for Başgan Köfte. The menu is accessible via a QR code, allowing customers to view menu items, prices, and images of food and beverages on their mobile devices.
+## Overview
 
-Project Structure
+This project is a **QR-based digital menu** for the restaurant **Başgan Köfte**. It provides an interactive and user-friendly way for customers to browse the menu using their smartphones. The menu is structured into sections, each containing food items with different portion sizes and prices.
 
-The project consists of the following main files:
+---
 
-main.html - The core HTML file that contains the structure of the menu.
+## Features
 
-main.js - The JavaScript file that enables interactivity, such as expanding and collapsing menu sections.
+- **Interactive Sections:** Customers can click on menu categories to expand/collapse them.
+- **Mobile-Friendly Design:** The menu adapts to different screen sizes for seamless viewing.
+- **Easy-to-Update Prices:** Prices are displayed dynamically using placeholders.
+- **Image Support:** Beverages include images for easy recognition.
+- **Lightweight & Fast:** The menu is built using **HTML, CSS, and JavaScript** without requiring a backend.
 
-style.css - The CSS file that defines the visual styling of the menu.
+---
 
-Features
+## File Structure
 
-Interactive menu sections: Users can click on menu categories to expand or collapse them.
+```
+/project-root
+│── assets/
+│   │── style.css      # Styling for the menu layout
+│   │── main.js        # JavaScript functions for toggling menu sections
+│   │── pictures/      # Images used in the menu (e.g., drinks)
+│── main.html          # Main HTML file (restaurant menu)
+```
 
-Responsive design: The menu adapts to different screen sizes, making it accessible on mobile devices.
+---
 
-Image display for beverages: Each drink option includes a small image for better visualization.
+## Installation & Usage
 
-Price placeholders: Prices are displayed in a highlighted box for easy readability.
+1. **Upload the files** to your web hosting provider.
+2. **Generate a QR code** linking to the hosted `main.html` file.
+3. **Print and place the QR code** on tables or the restaurant entrance.
+4. **Customers scan the QR code** to access the menu instantly.
 
-File Details
+---
 
-1. main.html
+## Technologies Used
 
-Defines the menu structure.
+- **HTML5:** Structure of the menu.
+- **CSS3:** Styling and responsiveness.
+- **JavaScript:** Interactive menu sections.
 
-Includes different sections such as Sandwiches, Mixed Sandwiches, Menus, Toasts, Plates, Breakfast Items, and Beverages.
+---
 
-Uses onclick attributes to allow users to toggle sections.
+## JavaScript Functionality
 
-References external CSS (style.css) and JavaScript (main.js).
+The script (`main.js`) allows users to show or hide menu sections by clicking on headings.
 
-2. main.js
-
-Contains a single function:
-
+```js
 function toggleVisibility(element) {
     const table = element.nextElementSibling;
     if (table.style.display === "none" || !table.style.display) {
@@ -48,44 +60,30 @@ function toggleVisibility(element) {
         table.style.display = "none";
     }
 }
+```
 
-This function allows users to click on a menu category title to show or hide its content dynamically.
+This makes the menu compact and easier to navigate on mobile devices.
 
-3. style.css
+---
 
-Provides styling for a clean and elegant look.
+## Customization
 
-Implements responsive design for mobile optimization.
+- **Modify `style.css`** to adjust colors, fonts, and layout.
+- **Update `main.html`** to add, remove, or edit menu items.
+- **Replace images** in the `pictures/` folder for drinks or branding.
 
-Enhances user experience with:
+---
 
-Hover effects on menu titles
+## Future Improvements
 
-Box shadows for a modern look
+- Implement a **backend system** for dynamic price updates.
+- Add **multi-language support**.
+- Enable **ordering functionality** directly from the menu.
 
-Readable font styles and structured spacing
+---
 
-How to Use
+### License
 
-Upload the project files to a web server or a local directory.
+This project is open for modification and customization based on your restaurant’s needs.
 
-Generate a QR code pointing to the hosted HTML file.
-
-Customers scan the QR code with their smartphones to access the digital menu.
-
-Future Enhancements
-
-Multi-language support: Add a language selection option.
-
-Dark mode: Provide a night-friendly interface.
-
-Backend integration: Connect to a database for dynamic price updates.
-
-Ordering system: Enable users to place orders directly from the menu.
-
-License
-
-This project is free to use and modify for Başgan Köfte or similar restaurant implementations.
-
-For further modifications or enhancements, feel free to update the HTML, CSS, and JavaScript files accordingly.
-
+---
